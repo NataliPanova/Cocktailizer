@@ -7,3 +7,7 @@ Probleem:
 Sageli, kui koguneme sõpradega, tahame lõbusalt aega veeta ja midagi juua. Tihti mõtleme kokteile teha, alkoholiga või ilma – igaüks otsustab ise. Probleem on aga selles, et me ei tea täpselt, millised retseptid ja kogused vaja on. Selle tõttu ostame liiga palju, raiskame raha ja tooteid ning lõpuks joogid ei tule hästi välja.
 
 Seepärast otsustasime koos Nataliaga teha retseptiraamatu, kus on kokteilid nii alkoholiga kui ka ilma. Nii saab igaüks valida endale sobiva joogi ja näha, milliseid koostisosi tal vaja läheb.
+
+
+
+https://trello.com/invite/b/68c264ce28dd40d7ba888b57/ATTIf1d95d7056ee5e6a35b885b79a9c9bfbC326FEED/prog
