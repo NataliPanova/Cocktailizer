@@ -1,6 +1,6 @@
 # Cocktailizer
 
-Natalia Panova
+Natalia Panova,
 Anna-Maria Lüdikainen
 
 Probleem:
