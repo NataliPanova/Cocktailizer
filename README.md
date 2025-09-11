@@ -1,4 +1,4 @@
-# Let-s-drink
+# Cocktalizer
 
 Natalia Panova
 Anna-Maria Lüdikainen
