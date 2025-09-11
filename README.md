@@ -11,4 +11,4 @@ Seepärast otsustasime koos Nataliaga teha retseptiraamatu, kus on kokteilid nii
 Meie projektis loome veebilehe jookide retseptidega. Kasutaja saab valida, kas ta soovib alkohoolset või alkoholivaba jooki. Seejärel on võimalik otsida kindla joogi või konkreetse koostisosa järgi. Lisaks on veebilehel eraldi menüü kõigi retseptidega, et oleks mugav kogu loendit sirvida.
 
 
-https://trello.com/invite/b/68c264ce28dd40d7ba888b57/ATTIf1d95d7056ee5e6a35b885b79a9c9bfbC326FEED/prog
+https://trello.com/b/3lHJafxg/prog
