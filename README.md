@@ -1,4 +1,4 @@
-# Cocktalizer
+# Cocktailizer
 
 Natalia Panova
 Anna-Maria Lüdikainen
