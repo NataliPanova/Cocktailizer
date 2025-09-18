@@ -15,3 +15,6 @@ https://trello.com/b/3lHJafxg/prog
 
 
 [sketch.pdf](https://github.com/user-attachments/files/22400229/sketch.pdf)
+
+rollid ja ülesanded
+https://trello.com/b/3lHJafxg/prog
