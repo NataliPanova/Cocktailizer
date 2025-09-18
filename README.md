@@ -12,4 +12,6 @@ Meie projektis loome veebilehe jookide retseptidega. Kasutaja saab valida, kas t
 
 
 https://trello.com/b/3lHJafxg/prog
+
+
 [sketch.pdf](https://github.com/user-attachments/files/22400229/sketch.pdf)
