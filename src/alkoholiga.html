@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Alkoholiga kokteilid</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Alkoholiga kokteilid</h1>
+    <ul>
+        {% for c in cocktails %}
+            <li>
+                <h2>{{ c.name }}</h2>
+                <p><strong>Koostisosad:</strong> {{ c.ingredients | join(', ') }}</p>
+                <p><strong>Valmistamine:</strong> {{ c.instructions }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('home') }}">Tagasi avalehele</a>
+</body>
+</html>
