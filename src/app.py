@@ -14,26 +14,32 @@ def home():
 @app.route('/alkoholiga')
 def alkoholiga():
     selected = request.args.getlist('ingredients')
-    all_ingredients = set()
+    categories = {
+        'alkohol': set(),
+        'vili': set(),
+        'muu jook': set(),
+        'lisand': set()
+    }
 
-    for cocktail in cocktails:
-        if cocktail['type'] == 'alkoholiga':
-            for j in cocktail['ingredients']: # kuna koostisosad on lisatud sõnastikutele, siis tsükkel läbib kõik sõnastikud 
-                all_ingredients.add(j['name'])
+    for i in cocktails:
+        if i['type'] == 'alkoholiga':
+            for j in i['ingredients']: # kuna koostisosad on lisatud sõnastikutele, siis tsükkel läbib kõik sõnastikud
+                cat = j.get('category', 'lisand') #  saame koostisosa kategooriat, kui seda pole olemas, siis eeldame, et see on lisand
+                categories.setdefault(cat, set()).add(j['name']) # lisame koostisosa kategooriasse
 
     if selected:
         filtered = [
             i for i in cocktails
             if i['type'] == 'alkoholiga' and
-               any(j['name'] in selected for j in i['ingredients']) # vähemalt 1 koostisosa
+               any(j['name'] in selected for j in i['ingredients']) # filtreerimine vähemalt 1 koostisosa järgi
         ]
     else:
-        filtered = [i for i in cocktails if i['type'] == 'alkoholiga'] # kui ei ole midagi valitud
+        filtered = [i for i in cocktails if i['type'] == 'alkoholiga'] # kui midagi ei ole valitud, siis näidakse kõik kokteilid
 
     return render_template(
         'alkoholiga.html',
         cocktails=filtered,
-        ingredients=sorted(all_ingredients),
+        ingredients={k: sorted(v) for k, v in categories.items()},
         selected=selected
     )
 
