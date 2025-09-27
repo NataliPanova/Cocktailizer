@@ -1,8 +1,28 @@
-[{"name": "Mojito vaarikatega",
-"type": "alkoholiga",
-"ingredients": ["Valge rumm 50 ml","Vaarikas 60 g", "Sprite 100 ml", "Laim 20 g", "Piparmünt 3 g", "Jää 60 g"],
-"instructions": "Purusta münt ja suhkur, lisa laim, vaarikat, rumm ja Sprite."}
-
+[ {
+    "name": "Mojito vaarikatega",
+    "type": "alkoholiga",
+    "ingredients": [
+      {"name": "Valge rumm", "amount": "50 ml"},
+      {"name": "Vaarikas", "amount": "60 g"},
+      {"name": "Sprite", "amount": "100 ml"},
+      {"name": "Laim", "amount": "20 g"},
+      {"name": "Piparmünt", "amount": "3 g"},
+      {"name": "Jää", "amount": "60 g"}
+    ],
+    "instructions": "Purusta münt ja suhkur, lisa laim, vaarikat, rumm ja Sprite."
+  },
+  {
+    "name": "Cuba Libre",
+    "type": "alkoholiga",
+    "ingredients": [
+      {"name": "Rumm", "amount": "60 ml"},
+      {"name": "Laimimahl", "amount": "30 ml"},
+      {"name": "Laim", "amount": "10 g"},
+      {"name": "Coca-Cola", "amount": "150 ml"},
+      {"name": "Jää", "amount": "80 g"}
+    ],
+    "instructions": "Lihtsalt sega kõik koostisosad jääga."
+  }
 
 
 ]
