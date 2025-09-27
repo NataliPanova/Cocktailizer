@@ -6,16 +6,33 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Alkoholiga kokteilid</h1>
-    <ul>
-        {% for c in cocktails %}
-            <li>
-                <h2>{{ c.name }}</h2>
-                <p><strong>Koostisosad:</strong> {{ c.ingredients | join(', ') }}</p>
-                <p><strong>Valmistamine:</strong> {{ c.instructions }}</p>
-            </li>
-        {% endfor %}
-    </ul>
+     <h1>Vali koostisosad</h1>
+
+  <form method="GET" action="/alkoholiga">
+    {% for j in ingredients %}
+      <input type="checkbox" name="ingredients" value="{{ j }}"
+        {% if j in request.args.getlist('ingredients') %}checked{% endif %}>
+      {{ j }}<br>
+    {% endfor %}
+    <input type="submit" value="Filtreeri">
+  </form>
+
+  <h2>Leitud kokteilid:</h2>
+  <ul>
+    {% for i in cocktails %}
+      <li>
+        <strong>{{ i.name }}</strong><br>
+        <ul>
+          {% for j in i.ingredients %}
+            <li>{{ j.name }} — {{ j.amount }}</li>
+          {% endfor %}
+        </ul>
+        Valmistamine: {{ i.instructions }}
+      </li>
+    {% else %}
+      <li>Ühtegi kokteili ei leitud.</li>
+    {% endfor %}
+  </ul>
     <a href="{{ url_for('home') }}">Tagasi avalehele</a>
 </body>
 </html>
