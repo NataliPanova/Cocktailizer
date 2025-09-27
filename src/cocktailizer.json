@@ -1,13 +1,14 @@
-[ {
+[
+  {
     "name": "Mojito vaarikatega",
     "type": "alkoholiga",
     "ingredients": [
-      {"name": "Valge rumm", "amount": "50 ml"},
-      {"name": "Vaarikas", "amount": "60 g"},
-      {"name": "Sprite", "amount": "100 ml"},
-      {"name": "Laim", "amount": "20 g"},
-      {"name": "Piparmünt", "amount": "3 g"},
-      {"name": "Jää", "amount": "60 g"}
+      {"name": "Valge rumm", "amount": "50 ml", "category": "alkohol"},
+      {"name": "Vaarikas", "amount": "60 g", "category": "vili"},
+      {"name": "Sprite", "amount": "100 ml", "category": "muu jook"},
+      {"name": "Laim", "amount": "20 g", "category": "vili"},
+      {"name": "Piparmünt", "amount": "3 g", "category": "lisand"},
+      {"name": "Jää", "amount": "60 g", "category": "lisand"}
     ],
     "instructions": "Purusta münt ja suhkur, lisa laim, vaarikat, rumm ja Sprite."
   },
@@ -15,14 +16,63 @@
     "name": "Cuba Libre",
     "type": "alkoholiga",
     "ingredients": [
-      {"name": "Rumm", "amount": "60 ml"},
-      {"name": "Laimimahl", "amount": "30 ml"},
-      {"name": "Laim", "amount": "10 g"},
-      {"name": "Coca-Cola", "amount": "150 ml"},
-      {"name": "Jää", "amount": "80 g"}
+      {"name": "Rumm", "amount": "60 ml", "category": "alkohol"},
+      {"name": "Laimimahl", "amount": "30 ml", "category": "muu jook"},
+      {"name": "Laim", "amount": "10 g", "category": "vili"},
+      {"name": "Coca-Cola", "amount": "150 ml", "category": "muu jook"},
+      {"name": "Jää", "amount": "80 g", "category": "lisand"}
     ],
     "instructions": "Lihtsalt sega kõik koostisosad jääga."
+  },
+  {
+    "name": "Pornstar Martini",
+    "type": "alkoholiga",
+    "ingredients": [
+      {"name": "Viin", "amount": "40 ml", "category": "alkohol"},
+      {"name": "Liköör", "amount": "20 ml", "category": "alkohol"},
+      {"name": "Prosecco", "amount": "50 ml", "category": "alkohol"},
+      {"name": "Passioonivili", "amount": "150 g", "category": "vili"},
+      {"name": "Vaniilisuhkur", "amount": "10 g", "category": "lisand"}
+    ],
+    "instructions": "... "
+  },
+  {
+    "name": "Pina Colada",
+    "type": "alkoholiga",
+    "ingredients": [
+      {"name": "Valge rumm", "amount": "75 ml", "category": "alkohol"},
+      {"name": "Kookossiirup", "amount": "40 ml", "category": "lisand"},
+      {"name": "Laim", "amount": "30 g", "category": "vili"},
+      {"name": "Ananass", "amount": "30 g", "category": "vili"},
+      {"name": "Kirss", "amount": "10 g", "category": "vili"},
+      {"name": "Jää", "amount": "60 g", "category": "lisand"}
+    ],
+    "instructions": "... "
+  },
+  {
+    "name": "Lagoon",
+    "type": "alkoholiga",
+    "ingredients": [
+      {"name": "Viin", "amount": "50 ml", "category": "alkohol"},
+      {"name": "Sprite", "amount": "150 ml", "category": "muu jook"},
+      {"name": "Blue Curaçao liköör", "amount": "20 ml", "category": "alkohol"},
+      {"name": "Ananass", "amount": "30 g", "category": "vili"},
+      {"name": "Jää", "amount": "60 g", "category": "lisand"}
+    ],
+    "instructions": "... "
+  },
+  {
+    "name": "Sex on the Beach",
+    "type": "alkoholiga",
+    "ingredients": [
+      {"name": "Viin", "amount": "50 ml", "category": "alkohol"},
+      {"name": "Virsikuliköör", "amount": "25 ml", "category": "alkohol"},
+      {"name": "Jõhvikamahl", "amount": "40 ml", "category": "muu jook"},
+      {"name": "Ananassimahl", "amount": "40 ml", "category": "muu jook"},
+      {"name": "Ananass", "amount": "15 g", "category": "vili"},
+      {"name": "Jõhvikas", "amount": "5 g", "category": "vili"},
+      {"name": "Jää", "amount": "60 g", "category": "lisand"}
+    ],
+    "instructions": "... "
   }
-
-
 ]
