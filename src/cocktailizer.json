@@ -74,5 +74,20 @@
       {"name": "Jää", "amount": "60 g", "category": "lisand"}
     ],
     "instructions": "... "
+  },
+{
+    "name": "Kimalane",
+    "type": "ilma-alkoholita",
+    "ingredients": [
+      {"name": "Karamellisiirup", "amount": "15 ml", "category": "lisand"},
+      {"name": "Apelsinimahl", "amount": "100 ml", "category": "muu jook"},
+      {"name": "Espresso", "amount": "50 ml", "category": "muu jook"},
+      {"name": "Ananassimahl", "amount": "40 ml", "category": "muu jook"},
+      {"name": "Apelsin", "amount": "40 g", "category": "vili"},
+      {"name": "Jää", "amount": "180 g", "category": "lisand"}
+    ],
+    "instructions": "... "
   }
+
+
 ]
