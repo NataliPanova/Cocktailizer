@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Alkoholita kokteilid</title>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Arimo', sans-serif;
+            padding: 40px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #39ff14;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #39ff14;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-bottom: 40px;
+        }
+
+        .category-row {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .category-box {
+            flex: 1;
+            min-width: 250px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #39ff14;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="submit"] {
+            background-color: #39ff14;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        .cocktail-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fefe22;
+        }
+
+        a {
+            color: #39ff14;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alkoholita kokteilid</h1>
+
+    <form method="GET" action="/ilma-alkoholita">
+        <div class="category-row">
+            <div class="category-box">
+                <h2>Viljad ja marjad</h2>
+                {% for j in ingredients['vili'] %}
+                    <label><input type="checkbox" name="ingredients" value="{{ j }}"
+                      {% if j in selected %}checked{% endif %}> {{ j }}</label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="category-row">
+            <div class="category-box">
+                <h2>Mahlad ja joogid</h2>
+                {% for j in ingredients['muu jook'] %}
+                    <label><input type="checkbox" name="ingredients" value="{{ j }}"
+                      {% if j in selected %}checked{% endif %}> {{ j }}</label>
+                {% endfor %}
+            </div>
+
+            <div class="category-box">
+                <h2>Lisandid</h2>
+                {% for j in ingredients['lisand'] %}
+                    <label><input type="checkbox" name="ingredients" value="{{ j }}"
+                      {% if j in selected %}checked{% endif %}> {{ j }}</label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <input type="submit" value="Filtreeri">
+    </form>
+
+    <h2>Leitud kokteilid:</h2>
+    <ul>
+        {% for i in cocktails %}
+            <li>
+                <div class="cocktail-name">{{ i.name }}</div>
+                <ul>
+                    {% for j in i.ingredients %}
+                        <li>{{ j.name }} — {{ j.amount }}</li>
+                    {% endfor %}
+                </ul>
+                <p>Valmistamine: {{ i.instructions }}</p>
+            </li>
+        {% else %}
+            <li>Ühtegi kokteili ei leitud.</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('home') }}">Tagasi avalehele</a>
+</body>
+</html>
  
+ 
+
