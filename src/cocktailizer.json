@@ -209,7 +209,47 @@
       {"name": "Jää", "amount": "180 g", "category": "lisand"}
     ],
     "instructions": "... "
+  },
+{
+    "name": "Alkoholivaba Mojito",
+    "type": "ilma-alkoholita",
+    "ingredients": [
+      {"name": "Piparmünt", "amount": "10 g", "category": "lisand"},
+      {"name": "Laim", "amount": "1/2 tk", "category": "vili"},
+      {"name": "Sprite", "amount": "150 ml", "category": "muu jook"},
+      {"name": "Suhkur", "amount": "10 g", "category": "lisand"},
+      {"name": "Jää", "amount": "60 g", "category": "lisand"}
+    ],
+    "instructions": "... "
+  },
+{
+    "name": "Arbuusi Sling",
+    "type": "ilma-alkoholita",
+    "ingredients": [
+      {"name": "Värske arbuus", "amount": "150 g", "category": "vili"},
+      {"name": "Sidrunimahl", "amount": "15 ml", "category": "muu jook"},
+      {"name": "Sprite", "amount": "100 ml", "category": "muu jook"},
+      {"name": "Suhkur", "amount": "10 g", "category": "lisand"},
+      {"name": "Jää", "amount": "80 g", "category": "lisand"}
+    ],
+    "instructions": "... "
+  },
+{
+    "name": "Marja limonaad",
+    "type": "ilma-alkoholita",
+    "ingredients": [
+      {"name": "Gaseeritud vesi", "amount": "200 ml", "category": "muu jook"},
+      {"name": "Laim", "amount": "60 g", "category": "vili"},
+      {"name": "Põldmurukas", "amount": "24 g", "category": "vili"},
+      {"name": "Mustikas", "amount": "10 g", "category": "vili"},
+      {"name": "Vaarikas", "amount": "20 g", "category": "vili"},
+      {"name": "Maasikas", "amount": "40 g", "category": "vili"},
+      {"name": "Suhkur", "amount": "10 g", "category": "lisand"},
+      {"name": "Münt", "amount": "10 g", "category": "lisand"},
+      {"name": "Jää", "amount": "200 g", "category": "lisand"},
+      {"name": "Grenadiinisiirup", "amount": "20 ml", "category": "lisand"}
+    ],
+    "instructions": "... "
   }
-
 
 ]
