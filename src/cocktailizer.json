@@ -76,6 +76,128 @@
     "instructions": "... "
   },
 {
+"name": "Espresso Martini",
+"type": "alkoholiga",
+"ingredients": [
+{"name": "Viin", "amount": "30 ml", "category": "alkohol"},
+{"name": "Kohviliköör", "amount": "15 ml", "category": "alkohol"},
+{"name": "Espresso", "amount": "50 ml", "category": "muu jook"},
+{"name": "Vanilisuhkur", "amount": "5 g", "category": "lisand"},
+{"name": "Jää", "amount": "60 g", "category": "lisand"}
+],
+"instructions": "... "
+},
+
+{
+"name": "Bianco Sunrise",
+"type": "alkoholiga",
+"ingredients": [
+{"name": "Valge vermut", "amount": "60 ml", "category": "alkohol"},
+{"name": "Jõhvikamahl", "amount": "75 ml", "category": "muu jook"},
+{"name": "Apelsinimahl", "amount": "75 ml", "category": "muu jook"},
+{"name": "Apelsin", "amount": "5 g", "category": "vili"},
+{"name": "Jää", "amount": "80 g", "category": "lisand"}
+],
+"instructions": "... "
+},
+
+{
+"name": "Clover Club",
+"type": "alkoholiga",
+"ingredients": [
+{"name": "Kuiv džinn", "amount": "60 ml", "category": "alkohol"},
+{"name": "Vaarikas", "amount": "30 g", "category": "vili"},
+{"name": "Laim", "amount": "20 g", "category": "vili"},
+{"name": "Muna valge", "amount": "20 g", "category": "lisand"},
+{"name": "Jää", "amount": "60 g", "category": "lisand"}
+],
+"instructions": "... "
+},
+
+{
+  "name": "Paloma",
+  "type": "alkoholiga",
+  "ingredients": [
+  {"name": "Tequila", "amount": "60 ml", "category": "alkohol"},
+  {"name": "Laimimahl", "amount": "15 ml", "category": "muu jook"},
+  {"name": "Greibimahl", "amount": "15 ml", "category": "muu jook"},
+  {"name": "Sooda", "amount": "15 ml", "category": "muu jook"},
+  {"name": "Vaarikas", "amount": "20 g", "category": "vili"},
+  {"name": "Laim", "amount": "10 g", "category": "vili"},
+  {"name": "Piparmünt", "amount": "1 g", "category": "lisand"},
+  {"name": "Jää", "amount": "60 g", "category": "lisand"}
+  ],
+  "instructions": "... "
+  },
+
+{
+  "name": "Sea Breeze",
+  "type": "alkoholiga",
+  "ingredients": [
+  {"name": "Viin", "amount": "60 ml", "category": "alkohol"},
+  {"name": "Jõhvikamahl", "amount": "100 ml", "category": "muu jook"},
+  {"name": "Greibimahl", "amount": "50 ml", "category": "muu jook"},
+  {"name": "Apelsin", "amount": "50 g", "category": "vili"},
+  {"name": "Jää", "amount": "60 g", "category": "lisand"}
+  ],
+  "instructions": "... "
+  },
+
+{
+  "name": "Aperol Spritz",
+  "type": "alkoholiga",
+  "ingredients": [
+  {"name": "Aperol", "amount": "100 ml", "category": "alkohol"},
+  {"name": "Prosecco", "amount": "100 ml", "category": "alkohol"},
+  {"name": "Sooda", "amount": "20 ml", "category": "muu jook"},
+  {"name": "Apelsin", "amount": "5 g", "category": "vili"},
+  {"name": "Jää", "amount": "60 g", "category": "lisand"}
+  ],
+  "instructions": "... "
+  },
+
+{
+  "name": "Martini Royale",
+  "type": "alkoholiga",
+  "ingredients": [
+  {"name": "Valge vermut", "amount": "75 ml", "category": "alkohol"},
+  {"name": "Prosecco", "amount": "75 ml", "category": "alkohol"},
+  {"name": "Laimimahl", "amount": "30 ml", "category": "muu jook"},
+  {"name": "Laim", "amount": "10 g", "category": "vili"},
+  {"name": "Piparmünt", "amount": "1 g", "category": "lisand"},
+  {"name": "Jää", "amount": "60 g", "category": "lisand"}
+  ],
+  "instructions": "... "
+  },
+
+{
+  "name": "Bellini",
+  "type": "alkoholiga",
+  "ingredients": [
+  {"name": "Prosecco", "amount": "75 ml", "category": "alkohol"},
+  {"name": "Sidrun", "amount": "10 g", "category": "vili"},
+  {"name": "Virsik", "amount": "40 g", "category": "vili"},
+  {"name": "Suhkur", "amount": "10 g", "category": "lisand"},
+  {"name": "Jää", "amount": "80 g", "category": "lisand"}
+  ],
+  "instructions": "... "
+  },
+
+{
+  "name": "Hemingway Daiquiri",
+  "type": "alkoholiga",
+  "ingredients": [
+  {"name": "Valge rumm", "amount": "40 ml", "category": "alkohol"},
+  {"name": "Liköör", "amount": "15 ml", "category": "alkohol"},
+  {"name": "Laimimahl", "amount": "15 ml", "category": "muu jook"},
+  {"name": "Greibimahl", "amount": "15 ml", "category": "muu jook"},
+  {"name": "Apelsin", "amount": "10 g", "category": "vili"},
+  {"name": "Suhkur", "amount": "10 g", "category": "lisand"},
+  {"name": "Jää", "amount": "60 g", "category": "lisand"}
+  ],
+  "instructions": "... "
+  },
+{
     "name": "Kimalane",
     "type": "ilma-alkoholita",
     "ingredients": [
