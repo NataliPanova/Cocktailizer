@@ -75,11 +75,9 @@ def ilma_alkoholita():
         selected=selected
     )
 
-
-
-
-
+@app.route('/recipe')
+def recipe():
+    return render_template('recipe.html', cocktails=cocktails)
 
 if __name__ == '__main__':
     app.run()
-
