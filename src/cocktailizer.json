@@ -250,6 +250,67 @@
       {"name": "Grenadiinisiirup", "amount": "20 ml", "category": "lisand"}
     ],
     "instructions": "... "
+  },
+{
+    "name": "Kookoslimonaad kannus",
+    "type": "ilma-alkoholita",
+    "ingredients": [
+      {"name": "Gaseeritud vesi", "amount": "500 ml", "category": "muu jook"},
+      {"name": "Banaan", "amount": "200 g", "category": "vili"},
+      {"name": "Ananassimahl", "amount": "250 ml", "category": "muu jook"},
+      {"name": "Kookosisiirup", "amount": "50 ml", "category": "lisand"},
+      {"name": "Punane viinamari", "amount": "60 g", "category": "vili"},
+      {"name": "Jää", "amount": "450 g", "category": "lisand"}
+    ],
+    "instructions": "... "
+  },{
+    "name": "Mango Sling",
+    "type": "ilma-alkoholita",
+    "ingredients": [
+      {"name": "Sprite", "amount": "150 ml", "category": "muu jook"},
+      {"name": "Sidrunimahl", "amount": "15 ml", "category": "lisand"},
+      {"name": "Ingverisiirup", "amount": "10 ml", "category": "lisand"},
+      {"name": "Mango", "amount": "120 g", "category": "vili"},
+      {"name": "Münt", "amount": "5 g", "category": "lisand"},
+      {"name": "Jää", "amount": "350 g", "category": "lisand"}
+    ],
+    "instructions": "... "
+  },{
+    "name": "Troopiline limonaad kannus",
+    "type": "ilma-alkoholita",
+    "ingredients": [
+      {"name": "Kollane banaanisiirup", "amount": "75 ml", "category": "lisand"},
+      {"name": "Ananassimahl", "amount": "500 ml", "category": "muu jook"},
+      {"name": "Passioonivilja viljaliha", "amount": "1/2 tk", "category": "vili"},
+      {"name": "Roosuhkur", "amount": "5 g", "category": "lisand"},
+      {"name": "Kookospiim", "amount": "90 ml", "category": "lisand"},
+      {"name": "Jää", "amount": "500 g", "category": "lisand"}
+    ],
+    "instructions": "... "
+  },
+{
+    "name": "Kariibi kohv",
+    "type": "ilma-alkoholita",
+    "ingredients": [
+      {"name": "Passioonivilja siirup", "amount": "25 ml", "category": "lisand"},
+      {"name": "Americano", "amount": "150 ml", "category": "muu jook"},
+      {"name": "Kohvioad", "amount": "2 g", "category": "lisand"},
+      {"name": "Vahukoor", "amount": "20 g", "category": "lisand"},
+      {"name": "Kookospüree", "amount": "30 g", "category": "lisand"}
+    ],
+    "instructions": "... "
+  },
+{
+    "name": "Vaarika Sbiten",
+    "type": "ilma-alkoholita",
+    "ingredients": [
+      {"name": "Gaseerimata vesi", "amount": "150 ml", "category": "muu jook"},
+      {"name": "Vaarikas", "amount": "40 g", "category": "vili"},
+      {"name": "Mesi", "amount": "40 ml", "category": "lisand"},
+      {"name": "Suhkur", "amount": "15 g", "category": "lisand"},
+      {"name": "Sidrunikoor", "amount": "1 tk", "category": "lisand"}
+    ],
+    "instructions": "... "
   }
 
 ]
