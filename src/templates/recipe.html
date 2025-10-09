@@ -1,1 +1,77 @@
  
+
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Kõik kokteilid</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Arimo', sans-serif;
+            padding: 40px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #fe59c2;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cocktail {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #fe59c2;
+        }
+
+        .cocktail-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fefe22;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 40px;
+            text-align: center;
+            color: #39ff14;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kõik kokteilid</h1>
+
+    {% for i in cocktails %}
+        <div class="cocktail">
+            <div class="cocktail-name">{{ i.name }}</div>
+            <ul>
+                {% for j in i.ingredients %}
+                    <li>{{ j.name }} — {{ j.amount }}</li>
+                {% endfor %}
+            </ul>
+            <p>Valmistamine: {{ i.instructions }}</p>
+        </div>
+    {% else %}
+        <p>Ühtegi kokteili ei leitud.</p>
+    {% endfor %}
+
+    <a href="{{ url_for('home') }}" class="back-link">Tagasi avalehele</a>
+</body>
+</html>
