@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Arimo', sans-serif;
+            padding: 40px;
+            margin: 0;
+        }
+
+        .switchable-header {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .switchable-header a {
+            color: #39ff14;
+            text-decoration: none;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .switchable-header a::after {
+            content: " ⇄";
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .switchable-header a:hover::after {
+            opacity: 1;
+        }
+
+        h2 {
+            color: #39ff14;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-bottom: 40px;
+        }
+
+        .category-row {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .category-box {
+            flex: 1;
+            min-width: 250px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #39ff14;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="submit"] {
+            background-color: #39ff14;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .cocktail-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .cocktail-card {
+            width: 45%;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #fe59c2;
+        }
+
+        .cocktail-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fefe22;
+            margin-bottom: 10px;
+        }
+
+        .cocktail-card ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 10px;
+        }
+
+        .cocktail-card li {
+            margin-bottom: 5px;
+        }
+
+        .back-links {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .back-links a {
+            color: #39ff14;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .glow-button.pink {
+            margin: 20px auto;
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            background: linear-gradient(135deg, #fe59c2, #ff85d0);
+            color: white;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 12px;
+            text-transform: uppercase;
+            box-shadow: 0 0 5px #fe59c2, 0 0 25px #ff85d0;
+            transition: all 0.3s ease;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+            font-family: 'Arimo', sans-serif;
+        }
+
+        .glow-button.pink:hover {
+            box-shadow: 0 0 25px #fe59c2, 0 0 45px #ff85d0;
+            transform: scale(1.07);
+        }
+
+        @media (max-width: 800px) {
+            .cocktail-card {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Переключаемый заголовок -->
+    <div class="switchable-header">
+        {% if alcohol_mode %}
+            <a href="{{ url_for('ilma_alkoholita') }}">Alkoholiga kokteilid</a>
+        {% else %}
+            <a href="{{ url_for('alkoholiga') }}">Ilma alkoholita kokteilid</a>
+        {% endif %}
+    </div>
+
+    <!-- Фильтрация -->
+    <form method="GET" action="">
+        <div class="category-row">
+            {% if alcohol_mode %}
+            <div class="category-box">
+                <h2>Alkohol</h2>
+                {% for j in ingredients['alkohol'] %}
+                    <label><input type="checkbox" name="ingredients" value="{{ j }}" {% if j in selected %}checked{% endif %}> {{ j }}</label>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="category-box">
+                <h2>Viljad ja marjad</h2>
+                {% for j in ingredients['vili'] %}
+                    <label><input type="checkbox" name="ingredients" value="{{ j }}" {% if j in selected %}checked{% endif %}> {{ j }}</label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="category-row">
+            <div class="category-box">
+                <h2>Mahlad ja joogid</h2>
+                {% for j in ingredients['muu jook'] %}
+                    <label><input type="checkbox" name="ingredients" value="{{ j }}" {% if j in selected %}checked{% endif %}> {{ j }}</label>
+                {% endfor %}
+            </div>
+
+            <div class="category-box">
+                <h2>Lisandid</h2>
+                {% for j in ingredients['lisand'] %}
+                    <label><input type="checkbox" name="ingredients" value="{{ j }}" {% if j in selected %}checked{% endif %}> {{ j }}</label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <input type="submit" value="Filtreeri">
+    </form>
+
+    <a href="{{ url_for('recipe') }}" class="glow-button pink">Menüü</a>
+
+    <!-- Коктейли -->
+    <h2>Leitud kokteilid:</h2>
+    <div class="cocktail-grid">
+        {% for i in cocktails %}
+        <div class="cocktail-card">
+            <div class="cocktail-name">{{ i.name }}</div>
+            <ul>
+                {% for j in i.ingredients %}
+                    <li>{{ j.name }} — {{ j.amount }}</li>
+                {% endfor %}
+            </ul>
+            <p>Valmistamine: {{ i.instructions }}</p>
+        </div>
+        {% else %}
+            <p>Ühtegi kokteili ei leitud.</p>
+        {% endfor %}
+    </div>
+
+    <!-- Ссылки внизу -->
+    <div class="back-links">
+        <a href="{{ url_for('home') }}">Tagasi avalehele</a>
+        <a href="{{ url_for('recipe') }}">Kõik kokteilid</a>
+    </div>
+
+</body>
+</html>
