@@ -1,43 +1,76 @@
- 
-
 <!DOCTYPE html>
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <title>Kõik kokteilid</title>
+    <title>Kõik joogid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #111;
             color: #fff;
             font-family: 'Arimo', sans-serif;
-            padding: 40px;
             margin: 0;
+            padding: 40px;
+        }
+
+        .navbar {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px #39ff14;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar a {
+            color: #39ff14;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #fff;
+            text-shadow: 0 0 10px #39ff14;
         }
 
         h1 {
-            font-size: 36px;
-            color: #fe59c2;
             text-align: center;
-            margin-bottom: 30px;
+            color: #fe59c2;
+            margin: 30px 0;
         }
 
-        .cocktail {
-            margin-bottom: 40px;
-            padding: 20px;
+        .cocktail-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            padding: 0 40px 40px 40px;
+        }
+
+        .cocktail-card {
             background-color: #222;
             border-radius: 10px;
             box-shadow: 0 0 10px #fe59c2;
+            padding: 20px;
+            width: 45%;
+            box-sizing: border-box;
         }
 
         .cocktail-name {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             color: #fefe22;
             margin-bottom: 10px;
         }
 
         ul {
-            list-style-type: none;
+            list-style: none;
             padding-left: 0;
         }
 
@@ -45,21 +78,28 @@
             margin-bottom: 5px;
         }
 
-        .back-link {
-            display: block;
-            margin-top: 40px;
-            text-align: center;
-            color: #39ff14;
-            font-weight: bold;
-            text-decoration: none;
-        }
+        a {
+         color: #fe59c2;
+         text-decoration: none;
+         font-weight: bold;
+         display: block;
+         margin: 40px auto 0;
+         width: fit-content; /* или фиксированная ширина, например 200px */
+}
     </style>
 </head>
 <body>
-    <h1>Kõik kokteilid</h1>
+    <div class="navbar">
+        <a href="{{ url_for('recipe') }}">Kõik joogid</a>
+        <a href="{{ url_for('alkoholiga') }}">Alkoholiga</a>
+        <a href="{{ url_for('ilma_alkoholita') }}">Ilma alkoholita</a>
+    </div>
 
-    {% for i in cocktails %}
-        <div class="cocktail">
+    <h1>Kõik joogid</h1>
+
+    <div class="cocktail-grid">
+        {% for i in cocktails %}
+        <div class="cocktail-card">
             <div class="cocktail-name">{{ i.name }}</div>
             <ul>
                 {% for j in i.ingredients %}
@@ -68,10 +108,12 @@
             </ul>
             <p>Valmistamine: {{ i.instructions }}</p>
         </div>
-    {% else %}
-        <p>Ühtegi kokteili ei leitud.</p>
-    {% endfor %}
+        {% else %}
+        <p>Ühtegi jooki ei leitud.</p>
+        {% endfor %}
+    </div>
 
-    <a href="{{ url_for('home') }}" class="back-link">Tagasi avalehele</a>
+<a href="{{ url_for('home') }}">Tagasi avalehele</a>
+
 </body>
 </html>
