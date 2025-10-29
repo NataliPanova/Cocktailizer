@@ -10,7 +10,7 @@
       {"name": "Piparmünt", "amount": "3 g", "category": "lisand"},
       {"name": "Jää", "amount": "60 g", "category": "lisand"}
     ],
-    "instructions": "Purusta münt ja suhkur, lisa laim, vaarikat, rumm ja Sprite."
+    "instructions": "Purusta münt, suhkur ja laim. Lisa vaarikad, rumm, Sprite ja jää, sega õrnalt."
   },
   {
     "name": "Cuba Libre",
@@ -22,7 +22,7 @@
       {"name": "Coca-Cola", "amount": "150 ml", "category": "muu jook"},
       {"name": "Jää", "amount": "80 g", "category": "lisand"}
     ],
-    "instructions": "Lihtsalt sega kõik koostisosad jääga."
+    "instructions": "Täida klaas jääga, vala rumm ja laimimahl, lisa Coca-Cola ja sega."
   },
   {
     "name": "Pornstar Martini",
@@ -34,7 +34,7 @@
       {"name": "Passioonivili", "amount": "150 g", "category": "vili"},
       {"name": "Vaniilisuhkur", "amount": "10 g", "category": "lisand"}
     ],
-    "instructions": "... "
+    "instructions": "Raputa jää, viin, liköör, passionivili ja vanillisuhkur shakeris. Kurna klaasi, serveeri proseccoga kõrvale."
   },
   {
     "name": "Pina Colada",
@@ -47,7 +47,7 @@
       {"name": "Kirss", "amount": "10 g", "category": "vili"},
       {"name": "Jää", "amount": "60 g", "category": "lisand"}
     ],
-    "instructions": "... "
+    "instructions": "Blendi rumm, kookossiirup, ananass ja laim jääga. Kaunista kirsiga."
   },
   {
     "name": "Lagoon",
@@ -59,7 +59,7 @@
       {"name": "Ananass", "amount": "30 g", "category": "vili"},
       {"name": "Jää", "amount": "60 g", "category": "lisand"}
     ],
-    "instructions": "... "
+    "instructions": "Sega viin ja Blue Curaçao jääga, lisa Sprite ja ananass."
   },
   {
     "name": "Sex on the Beach",
@@ -73,90 +73,84 @@
       {"name": "Jõhvikas", "amount": "5 g", "category": "vili"},
       {"name": "Jää", "amount": "60 g", "category": "lisand"}
     ],
-    "instructions": "... "
+    "instructions": "Sega viin, virsikuliköör, jõhvika- ja ananassimahl jääga. Lisa puuviljad kaunistuseks."
   },
-{
-"name": "Espresso Martini",
-"type": "alkoholiga",
-"ingredients": [
-{"name": "Viin", "amount": "30 ml", "category": "alkohol"},
-{"name": "Kohviliköör", "amount": "15 ml", "category": "alkohol"},
-{"name": "Espresso", "amount": "50 ml", "category": "muu jook"},
-{"name": "Vanilisuhkur", "amount": "5 g", "category": "lisand"},
-{"name": "Jää", "amount": "60 g", "category": "lisand"}
-],
-"instructions": "... "
-},
-
-{
-"name": "Bianco Sunrise",
-"type": "alkoholiga",
-"ingredients": [
-{"name": "Valge vermut", "amount": "60 ml", "category": "alkohol"},
-{"name": "Jõhvikamahl", "amount": "75 ml", "category": "muu jook"},
-{"name": "Apelsinimahl", "amount": "75 ml", "category": "muu jook"},
-{"name": "Apelsin", "amount": "5 g", "category": "vili"},
-{"name": "Jää", "amount": "80 g", "category": "lisand"}
-],
-"instructions": "... "
-},
-
-{
-"name": "Clover Club",
-"type": "alkoholiga",
-"ingredients": [
-{"name": "Kuiv džinn", "amount": "60 ml", "category": "alkohol"},
-{"name": "Vaarikas", "amount": "30 g", "category": "vili"},
-{"name": "Laim", "amount": "20 g", "category": "vili"},
-{"name": "Muna valge", "amount": "20 g", "category": "lisand"},
-{"name": "Jää", "amount": "60 g", "category": "lisand"}
-],
-"instructions": "... "
-},
-
-{
-  "name": "Paloma",
-  "type": "alkoholiga",
-  "ingredients": [
-  {"name": "Tequila", "amount": "60 ml", "category": "alkohol"},
-  {"name": "Laimimahl", "amount": "15 ml", "category": "muu jook"},
-  {"name": "Greibimahl", "amount": "15 ml", "category": "muu jook"},
-  {"name": "Sooda", "amount": "15 ml", "category": "muu jook"},
-  {"name": "Vaarikas", "amount": "20 g", "category": "vili"},
-  {"name": "Laim", "amount": "10 g", "category": "vili"},
-  {"name": "Piparmünt", "amount": "1 g", "category": "lisand"},
-  {"name": "Jää", "amount": "60 g", "category": "lisand"}
-  ],
-  "instructions": "... "
+  {
+    "name": "Espresso Martini",
+    "type": "alkoholiga",
+    "ingredients": [
+      {"name": "Viin", "amount": "30 ml", "category": "alkohol"},
+      {"name": "Kohviliköör", "amount": "15 ml", "category": "alkohol"},
+      {"name": "Espresso", "amount": "50 ml", "category": "muu jook"},
+      {"name": "Vanilisuhkur", "amount": "5 g", "category": "lisand"},
+      {"name": "Jää", "amount": "60 g", "category": "lisand"}
+    ],
+    "instructions": "Raputa viin, kohviliköör, espresso ja vanillisuhkur jääga. Kurna klaasi."
   },
-
-{
-  "name": "Sea Breeze",
-  "type": "alkoholiga",
-  "ingredients": [
-  {"name": "Viin", "amount": "60 ml", "category": "alkohol"},
-  {"name": "Jõhvikamahl", "amount": "100 ml", "category": "muu jook"},
-  {"name": "Greibimahl", "amount": "50 ml", "category": "muu jook"},
-  {"name": "Apelsin", "amount": "50 g", "category": "vili"},
-  {"name": "Jää", "amount": "60 g", "category": "lisand"}
-  ],
-  "instructions": "... "
+  {
+    "name": "Bianco Sunrise",
+    "type": "alkoholiga",
+    "ingredients": [
+      {"name": "Valge vermut", "amount": "60 ml", "category": "alkohol"},
+      {"name": "Jõhvikamahl", "amount": "75 ml", "category": "muu jook"},
+      {"name": "Apelsinimahl", "amount": "75 ml", "category": "muu jook"},
+      {"name": "Apelsin", "amount": "5 g", "category": "vili"},
+      {"name": "Jää", "amount": "80 g", "category": "lisand"}
+    ],
+    "instructions": "Vala vermut, jõhvika- ja apelsinimahl jääle. Sega ja kaunista apelsiniga."
   },
-
-{
-  "name": "Aperol Spritz",
-  "type": "alkoholiga",
-  "ingredients": [
-  {"name": "Aperol", "amount": "100 ml", "category": "alkohol"},
-  {"name": "Prosecco", "amount": "100 ml", "category": "alkohol"},
-  {"name": "Sooda", "amount": "20 ml", "category": "muu jook"},
-  {"name": "Apelsin", "amount": "5 g", "category": "vili"},
-  {"name": "Jää", "amount": "60 g", "category": "lisand"}
-  ],
-  "instructions": "... "
+  {
+    "name": "Clover Club",
+    "type": "alkoholiga",
+    "ingredients": [
+      {"name": "Kuiv džinn", "amount": "60 ml", "category": "alkohol"},
+      {"name": "Vaarikas", "amount": "30 g", "category": "vili"},
+      {"name": "Laim", "amount": "20 g", "category": "vili"},
+      {"name": "Muna valge", "amount": "20 g", "category": "lisand"},
+      {"name": "Jää", "amount": "60 g", "category": "lisand"}
+    ],
+    "instructions": "Raputa džinn, vaarikad, laimimahl ja munavalge jääga. Kurna vahuga klaasi."
   },
-
-{
+  {
+    "name": "Paloma",
+    "type": "alkoholiga",
+    "ingredients": [
+      {"name": "Tequila", "amount": "60 ml", "category": "alkohol"},
+      {"name": "Laimimahl", "amount": "15 ml", "category": "muu jook"},
+      {"name": "Greibimahl", "amount": "15 ml", "category": "muu jook"},
+      {"name": "Sooda", "amount": "15 ml", "category": "muu jook"},
+      {"name": "Vaarikas", "amount": "20 g", "category": "vili"},
+      {"name": "Laim", "amount": "10 g", "category": "vili"},
+      {"name": "Piparmünt", "amount": "1 g", "category": "lisand"},
+      {"name": "Jää", "amount": "60 g", "category": "lisand"}
+    ],
+    "instructions": "Sega tequila, mahlad ja sooda jääga. Lisa vaarikas, laim ja münt."
+  },
+  {
+    "name": "Sea Breeze",
+    "type": "alkoholiga",
+    "ingredients": [
+      {"name": "Viin", "amount": "60 ml", "category": "alkohol"},
+      {"name": "Jõhvikamahl", "amount": "100 ml", "category": "muu jook"},
+      {"name": "Greibimahl", "amount": "50 ml", "category": "muu jook"},
+      {"name": "Apelsin", "amount": "50 g", "category": "vili"},
+      {"name": "Jää", "amount": "60 g", "category": "lisand"}
+    ],
+    "instructions": "Sega viin, jõhvika- ja greibimahl jääga. Kaunista apelsiniga."
+  },
+  {
+    "name": "Aperol Spritz",
+    "type": "alkoholiga",
+    "ingredients": [
+      {"name": "Aperol", "amount": "100 ml", "category": "alkohol"},
+      {"name": "Prosecco", "amount": "100 ml", "category": "alkohol"},
+      {"name": "Sooda", "amount": "20 ml", "category": "muu jook"},
+      {"name": "Apelsin", "amount": "5 g", "category": "vili"},
+      {"name": "Jää", "amount": "60 g", "category": "lisand"}
+    ],
+    "instructions": "Vala klaasi jää, lisa Aperol ja Prosecco, lõpeta soodaga, sega kergelt."
+  },
+  {
   "name": "Martini Royale",
   "type": "alkoholiga",
   "ingredients": [
@@ -167,7 +161,7 @@
   {"name": "Piparmünt", "amount": "1 g", "category": "lisand"},
   {"name": "Jää", "amount": "60 g", "category": "lisand"}
   ],
-  "instructions": "... "
+  "instructions": "Pane klaasi jää, vala vermut ja Prosecco, lisa laimimahl, sega ja kaunista laimi ja piparmündiga."
   },
 
 {
@@ -180,7 +174,7 @@
   {"name": "Suhkur", "amount": "10 g", "category": "lisand"},
   {"name": "Jää", "amount": "80 g", "category": "lisand"}
   ],
-  "instructions": "... "
+  "instructions": "Tee virsikupüree sidruni ja suhkruga, vala klaasi ja lisa aeglaselt Prosecco, sega kergelt."
   },
 
 {
@@ -195,9 +189,9 @@
   {"name": "Suhkur", "amount": "10 g", "category": "lisand"},
   {"name": "Jää", "amount": "60 g", "category": "lisand"}
   ],
-  "instructions": "... "
+  "instructions": "Sega šeikeris rumm, liköör, laimi- ja greibimahl suhkru ja jääga, raputa ja kurna klaasi, kaunista apelsiniga."
   },
-{
+  {
     "name": "Kimalane",
     "type": "ilma-alkoholita",
     "ingredients": [
@@ -208,9 +202,9 @@
       {"name": "Apelsin", "amount": "40 g", "category": "vili"},
       {"name": "Jää", "amount": "180 g", "category": "lisand"}
     ],
-    "instructions": "... "
+    "instructions": "Täida klaas jääga, lisa karamellisiirup, apelsinimahl, espresso ja ananassimahl, sega, kaunista apelsiniga."
   },
-{
+  {
     "name": "Alkoholivaba Mojito",
     "type": "ilma-alkoholita",
     "ingredients": [
@@ -220,9 +214,9 @@
       {"name": "Suhkur", "amount": "10 g", "category": "lisand"},
       {"name": "Jää", "amount": "60 g", "category": "lisand"}
     ],
-    "instructions": "... "
+    "instructions": "Purusta piparmünt ja laim, lisa suhkur, Sprite ja jää, sega õrnalt."
   },
-{
+  {
     "name": "Arbuusi Sling",
     "type": "ilma-alkoholita",
     "ingredients": [
@@ -232,9 +226,9 @@
       {"name": "Suhkur", "amount": "10 g", "category": "lisand"},
       {"name": "Jää", "amount": "80 g", "category": "lisand"}
     ],
-    "instructions": "... "
+    "instructions": "Blendi arbuus ja sidrunimahl, vala klaasi, lisa Sprite, suhkur ja jää, sega."
   },
-{
+  {
     "name": "Marja limonaad",
     "type": "ilma-alkoholita",
     "ingredients": [
@@ -249,9 +243,9 @@
       {"name": "Jää", "amount": "200 g", "category": "lisand"},
       {"name": "Grenadiinisiirup", "amount": "20 ml", "category": "lisand"}
     ],
-    "instructions": "... "
+    "instructions": "Täida kann jääga, lisa kõik marjad, lime, suhkur, münt ja grenadiinisiirup, vala gaseeritud vesi ja sega."
   },
-{
+  {
     "name": "Kookoslimonaad kannus",
     "type": "ilma-alkoholita",
     "ingredients": [
@@ -262,8 +256,9 @@
       {"name": "Punane viinamari", "amount": "60 g", "category": "vili"},
       {"name": "Jää", "amount": "450 g", "category": "lisand"}
     ],
-    "instructions": "... "
-  },{
+    "instructions": "Blendi banaan ja ananassimahl, lisa kookosisiirup ja punased viinamarjad, vala gaseeritud vesi ja lisa jää."
+  },
+  {
     "name": "Mango Sling",
     "type": "ilma-alkoholita",
     "ingredients": [
@@ -274,8 +269,9 @@
       {"name": "Münt", "amount": "5 g", "category": "lisand"},
       {"name": "Jää", "amount": "350 g", "category": "lisand"}
     ],
-    "instructions": "... "
-  },{
+    "instructions": "Blendi mango ja sidrunimahl, lisa ingverisiirup, Sprite ja jää, sega ja kaunista mündiga."
+  },
+  {
     "name": "Troopiline limonaad kannus",
     "type": "ilma-alkoholita",
     "ingredients": [
@@ -286,21 +282,21 @@
       {"name": "Kookospiim", "amount": "90 ml", "category": "lisand"},
       {"name": "Jää", "amount": "500 g", "category": "lisand"}
     ],
-    "instructions": "... "
+    "instructions": "Blendi ananassimahl, passioonivilja viljaliha, banaanisiirup, kookospiim ja roosuhkur, vala klaasi jää ja serveeri."
   },
-{
+  {
     "name": "Kariibi kohv",
     "type": "ilma-alkoholita",
     "ingredients": [
       {"name": "Passioonivilja siirup", "amount": "25 ml", "category": "lisand"},
-      {"name": "Americano", "amount": "150 ml", "category": "muu jook"},
-      {"name": "Kohvioad", "amount": "2 g", "category": "lisand"},
-      {"name": "Vahukoor", "amount": "20 g", "category": "lisand"},
-      {"name": "Kookospüree", "amount": "30 g", "category": "lisand"}
+      {"name": "Americano kohv", "amount": "120 ml", "category": "muu jook"},
+      {"name": "Vanillisiirup", "amount": "15 ml", "category": "lisand"},
+      {"name": "Värske passion", "amount": "1/4 tk", "category": "vili"},
+      {"name": "Jää", "amount": "50 g", "category": "lisand"}
     ],
-    "instructions": "... "
+    "instructions": "Vala Americano kohv klaasi, lisa siirupid ja purustatud passion, lisa jää ja sega õrnalt."
   },
-{
+  {
     "name": "Vaarika Sbiten",
     "type": "ilma-alkoholita",
     "ingredients": [
@@ -310,7 +306,6 @@
       {"name": "Suhkur", "amount": "15 g", "category": "lisand"},
       {"name": "Sidrunikoor", "amount": "1 tk", "category": "lisand"}
     ],
-    "instructions": "... "
+    "instructions": "Kuumuta vesi vaarikate, mee, suhkru ja sidrunikoorega, sega, kurna ja serveeri soojalt."
   }
-
 ]
