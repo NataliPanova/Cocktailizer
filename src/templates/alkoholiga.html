@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Alkoholiga kokteilid</title>
-
-    <!-- Шрифты -->
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
@@ -16,11 +14,38 @@
             margin: 0;
         }
 
+
+        .navbar {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px #39ff14;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar a {
+            color: #39ff14;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #fff;
+            text-shadow: 0 0 10px #39ff14;
+        }
+
         h1 {
             font-size: 36px;
             color: #39ff14;
             text-align: center;
-            margin-bottom: 30px;
+            margin: 30px 0;
         }
 
         h2 {
@@ -30,7 +55,7 @@
         }
 
         form {
-            margin-bottom: 40px;
+            margin: 0 40px 40px 40px;
         }
 
         .category-row {
@@ -50,76 +75,73 @@
             box-shadow: 0 0 10px #39ff14;
         }
 
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-
         input[type="submit"] {
-            background-color: #39ff14;
-            color: black;
+         background-color: #39ff14;
+         color: black;
             padding: 10px 20px;
             border: none;
             font-weight: bold;
             cursor: pointer;
             border-radius: 5px;
-            margin-top: 20px;
+            margin: 20px auto 0;
             font-size: 16px;
+            display: block;
+}
+
+
+
+        .cocktail-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            padding: 0 40px;
         }
 
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        li {
-            margin-bottom: 20px;
+        .cocktail-card {
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #39ff14;
+            padding: 20px;
+            width: 45%;
+            box-sizing: border-box;
         }
 
         .cocktail-name {
             font-size: 20px;
             font-weight: bold;
             color: #fefe22;
+            margin-bottom: 10px;
         }
 
-        a {
-            color: #39ff14;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 40px;
+        ul {
+            list-style: none;
+            padding-left: 0;
         }
 
-    .glow-button.pink {
-    width: 100px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(135deg, #fe59c2, #ff85d0);
-    color: white;
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 12px;
-    text-transform: uppercase;
-    box-shadow: 0 0 5px #fe59c2, 0 0 25px #ff85d0;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    font-family: 'Arimo', sans-serif;
-    letter-spacing: 1px;
-                            }
+        li {
+            margin-bottom: 5px;
+        }
 
-.glow-button.pink:hover {
-    box-shadow: 0 0 25px #fe59c2, 0 0 45px #ff85d0;
-    transform: scale(1.07);
-                          }
+         a {
+         color: #39ff14;
+         text-decoration: none;
+         font-weight: bold;
+         display: block;
+         margin: 40px auto 0;
+         width: fit-content; /* или фиксированная ширина, например 200px */
+}
 
     </style>
 </head>
 <body>
+
+    <div class="navbar">
+        <a href="{{ url_for('recipe') }}">Kõik joogid</a>
+        <a href="{{ url_for('alkoholiga') }}">Alkoholiga</a>
+        <a href="{{ url_for('ilma_alkoholita') }}">Ilma alkoholita</a>
+    </div>
+
     <h1>Alkoholiga kokteilid</h1>
 
     <form method="GET" action="/alkoholiga">
@@ -127,16 +149,14 @@
             <div class="category-box">
                 <h2>Alkohol</h2>
                 {% for j in ingredients['alkohol'] %}
-                    <label><input type="checkbox" name="ingredients" value="{{ j }}"
-                      {% if j in selected %}checked{% endif %}> {{ j }}</label>
+                    <label><input type="checkbox" name="ingredients" value="{{ j }}" {% if j in selected %}checked{% endif %}> {{ j }}</label><br>
                 {% endfor %}
             </div>
 
             <div class="category-box">
                 <h2>Viljad ja marjad</h2>
                 {% for j in ingredients['vili'] %}
-                    <label><input type="checkbox" name="ingredients" value="{{ j }}"
-                      {% if j in selected %}checked{% endif %}> {{ j }}</label>
+                    <label><input type="checkbox" name="ingredients" value="{{ j }}" {% if j in selected %}checked{% endif %}> {{ j }}</label><br>
                 {% endfor %}
             </div>
         </div>
@@ -145,16 +165,14 @@
             <div class="category-box">
                 <h2>Mahlad ja joogid</h2>
                 {% for j in ingredients['muu jook'] %}
-                    <label><input type="checkbox" name="ingredients" value="{{ j }}"
-                      {% if j in selected %}checked{% endif %}> {{ j }}</label>
+                    <label><input type="checkbox" name="ingredients" value="{{ j }}" {% if j in selected %}checked{% endif %}> {{ j }}</label><br>
                 {% endfor %}
             </div>
 
             <div class="category-box">
                 <h2>Lisandid</h2>
                 {% for j in ingredients['lisand'] %}
-                    <label><input type="checkbox" name="ingredients" value="{{ j }}"
-                      {% if j in selected %}checked{% endif %}> {{ j }}</label>
+                    <label><input type="checkbox" name="ingredients" value="{{ j }}" {% if j in selected %}checked{% endif %}> {{ j }}</label><br>
                 {% endfor %}
             </div>
         </div>
@@ -162,27 +180,25 @@
         <input type="submit" value="Filtreeri">
     </form>
 
-    <a href="{{ url_for('recipe') }}" class="glow-button pink">Menüü</a>
-
-
-    <h2>Leitud kokteilid:</h2>
-    <ul>
+    <h2 style="text-align:center;">Leitud kokteilid:</h2>
+    <div class="cocktail-grid">
         {% for i in cocktails %}
-            <li>
-                <div class="cocktail-name">{{ i.name }}</div>
-                <ul>
-                    {% for j in i.ingredients %}
-                        <li>{{ j.name }} — {{ j.amount }}</li>
-                    {% endfor %}
-                </ul>
-                <p>Valmistamine: {{ i.instructions }}</p>
-            </li>
+        <div class="cocktail-card">
+            <div class="cocktail-name">{{ i.name }}</div>
+            <ul>
+                {% for j in i.ingredients %}
+                    <li>{{ j.name }} — {{ j.amount }}</li>
+                {% endfor %}
+            </ul>
+            <p>Valmistamine: {{ i.instructions }}</p>
+        </div>
         {% else %}
-            <li>Ühtegi kokteili ei leitud.</li>
+        <p>Ühtegi kokteili ei leitud.</p>
         {% endfor %}
-    </ul>
+    </div>
+
+
 
     <a href="{{ url_for('home') }}">Tagasi avalehele</a>
-
 </body>
 </html>
