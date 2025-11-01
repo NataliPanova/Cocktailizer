@@ -32,7 +32,7 @@
       {"name": "Liköör", "amount": "20 ml", "category": "alkohol"},
       {"name": "Prosecco", "amount": "50 ml", "category": "alkohol"},
       {"name": "Passioonivili", "amount": "150 g", "category": "vili"},
-      {"name": "Vaniilisuhkur", "amount": "10 g", "category": "lisand"}
+      {"name": "Vanillisuhkur", "amount": "10 g", "category": "lisand"}
     ],
     "instructions": "Raputa jää, viin, liköör, passionivili ja vanillisuhkur shakeris. Kurna klaasi, serveeri proseccoga kõrvale."
   },
@@ -82,7 +82,7 @@
       {"name": "Viin", "amount": "30 ml", "category": "alkohol"},
       {"name": "Kohviliköör", "amount": "15 ml", "category": "alkohol"},
       {"name": "Espresso", "amount": "50 ml", "category": "muu jook"},
-      {"name": "Vanilisuhkur", "amount": "5 g", "category": "lisand"},
+      {"name": "Vanillisuhkur", "amount": "5 g", "category": "lisand"},
       {"name": "Jää", "amount": "60 g", "category": "lisand"}
     ],
     "instructions": "Raputa viin, kohviliköör, espresso ja vanillisuhkur jääga. Kurna klaasi."
